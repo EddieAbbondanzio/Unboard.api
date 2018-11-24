@@ -1,3 +1,4 @@
+import { NotImplementedError } from "ts-dotnet-errors";
 
 /**
  * Require the user to be authenticated with a bearer token,
@@ -5,6 +6,6 @@
  */
 export function Authenticated() {   
     return function(target: any, propertyKey: string, descriptor: PropertyDescriptor) {
-
+        throw new NotImplementedError();
     }
 }

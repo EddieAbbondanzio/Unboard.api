@@ -43,6 +43,7 @@ export class IocContainer {
      * Inject all of the injectables into the IOC container.
      */
     private bindInjectables() {
+
         this.container.bind<HttpServer>(IOC_TYPES.HTTP_SERVER).to(HttpServer);
     }
 }
